@@ -11,32 +11,35 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array[2], array[1] = array[1], array[2]
+  array[1], array[2] = array[2], array[1]
   array
 end
 
-# def swap_elements_from_to(array, i1, i2)
-#   array[i1], array[i2] = array[i2], array[i1]
-#   array
-# end
-
 def reverse_array(array)
-  array.reverse
+  array.reverse!
 end
 
 def kesha_maker(array)
   array.each { |element| element[2] = "$" }
 end
 
+# def kesha_maker(array)
+#   new_array = []
+#   array.each do |element| 
+#     element[2] = "$"
+#     new_array << element
+#   end
+#   new_array
+# end
+
 def find_a(array)
   array.select { |element| element.start_with?("a") }
 end
 
-def sum_array(array)
-  #array.sum
-  array.inject(:+)
+def sum_array(numbers_array)
+  numbers_array.inject(:+)
 end
 
-def add_s(array)
-  array.each_with_index { |e, i| e << "s" if i != 1 }
+def add_s(words_array)
+  words_array.each_with_index { |word, index| word << "s" unless index == 1 }
 end
