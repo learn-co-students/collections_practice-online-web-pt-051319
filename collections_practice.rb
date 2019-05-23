@@ -45,17 +45,6 @@ def sum_array(array)
   sum 
 end
 
-def add_s(array)
-  new_array = []
-  array.each do |string|
-    unless string = array[2]
-    string_array = string.split("") 
-    string_array << "s" 
-    new_array << string_array.join("")
-  end
-  end
-  new_array
-end
 
 def add_s(array)
   array.each_with_index do |word, index|
