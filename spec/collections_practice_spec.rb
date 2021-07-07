@@ -5,21 +5,21 @@ describe 'collections practice' do
   # Question 1
   describe '#sort_array_asc' do
     it 'should return an array sorted in ascending order' do
-      expect(sort_array_asc([25, 7, 1])).to eq([1,7,25])
+      expect(sort_array_asc([26, 9, 1])).to eq([1,9,26])
     end
   end
 
   # Question 2
   describe '#sort_array_desc' do
     it 'should return an array sorted in descending order' do
-      expect(sort_array_desc([25, 7, 14])).to eq([25, 14, 7])
+      expect(sort_array_desc([29, 6, 17])).to eq([29, 17, 6])
     end
   end
 
   # Question 3
   describe '#sort_array_char_count' do
     it 'should return an array in ascending order sorted by the number of characters in the string' do
-      expect(sort_array_char_count(["dogs", "cat", "Horses"])).to eq(["cat", "dogs", "Horses"])
+      expect(sort_array_char_count(["Rabbits", "cats", "pigs"])).to eq(["Rabbits", "pigs", "cats"])
     end
   end
 
