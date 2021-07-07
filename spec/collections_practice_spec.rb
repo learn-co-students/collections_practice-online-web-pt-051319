@@ -1,7 +1,13 @@
-require 'spec_helper'
+def collection (3,4,7,9,8,1,2)
+  sort_array_asc (1,2nd)
+  
+  puts swap_elements(1-9) 
+  
+end
+  
 
 describe 'collections practice' do
-
+_
   # Question 1
   describe '#sort_array_asc' do
     it 'should return an array sorted in ascending order' do
